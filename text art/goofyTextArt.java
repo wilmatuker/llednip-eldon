@@ -7,10 +7,10 @@ class goofyTextArt {
         System.out.println("                    /    /       ");
         System.out.println("                   /    /        ");
         System.out.println("                  |    |         ");
-        System.out.println("                 \\    \\           ");
-        System.out.println("                   \\   \\         ");
-        System.out.println("                     \\  \\         ");
-        System.out.println("                        __         ");
+        System.out.println("                  \\    \\           ");
+        System.out.println("                    \\   \\         ");
+        System.out.println("                      \\  \\         ");
+        System.out.println("                        ___         ");
 
         System.out.println("\nThank you for viewing this work of art");
     }    
