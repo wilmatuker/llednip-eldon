@@ -5,7 +5,7 @@ class birthday2 {
          * 
          * or to run the program
         */
-        int age = 15;
+        int age = 0;
         /*
          * ditto but change it to the current year
         */
