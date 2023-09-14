@@ -1,4 +1,4 @@
-public class add1 {
+class add1 {
     public static void main(String[] args) {
         //change these to do addition
         double num1 = 10.8;
