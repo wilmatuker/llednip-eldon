@@ -1,4 +1,4 @@
-class squarer {
+class squarer7 {
     public static void main(String[] args) {
         //num you want to square
         double num;
