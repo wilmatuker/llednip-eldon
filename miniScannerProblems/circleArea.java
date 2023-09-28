@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class circleArea {
+class circleArea {
     public static void main(String[] args) {
         Scanner skenner = new Scanner(System.in);
         System.out.println("You are looking to see how much area you can close of staying a constant distance from something");
