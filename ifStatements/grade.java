@@ -18,7 +18,7 @@ class grade {
             System.out.println("That's a C");
         } else if (numGrade >= .59) {
             System.out.println("That's a D");
-        } else if (numGrade >= .58) {
+        } else if (numGrade >= 0) {
             System.out.println("That's an F :(");
         } else {
             System.out.println("wat ._.");
