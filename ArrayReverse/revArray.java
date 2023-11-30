@@ -17,15 +17,17 @@ class revArray {
         }
 
         for (int i = array.length-1; i > 0; i--) 
-        {
+        {            
             var temp = array[i];//Temporary value storage
-            System.out.println("array:");
-            for (int j2 = 0; j2 < array.length; j2++) {
-                System.out.println(array[j2]);
+            for (int j = 0; j > array.length-1; j++) {
+                System.out.println("Hi!");
+                System.out.println("array:");
+                for (int j2 = 0; j2 < array.length; j2++) {
+                    System.out.println(array[j2]);
+                }
+
+                array[j] = array[j-1];    
             }
-            
-            array[i] = array[0];
-            array[0] = temp;
         }
 
         String arrayString = "[";
