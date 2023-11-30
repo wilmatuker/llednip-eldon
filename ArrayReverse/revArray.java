@@ -4,22 +4,33 @@ class revArray {
     public static void main(String[] args) {
         Scanner amput = new Scanner(System.in);
         System.out.println("How big should the array be?");
-        long size = amput.nextLong();//Size of array (Long to let anyone make long arrays if they feel like it)
+        int size = amput.nextInt();//Size of array
         String[] array = new String[size];
         //add values to array
         for(int i = 0; i < size; i++) {
-           System.out.print("Enter value\n>>");
+           System.out.print("Enter value\n>> ");
            array[i] = amput.nextLine();
         }
-        for (int i = 0; i < array.length; i++) {
-            var temp = array[i];//Temporary file
-            for (int j = 0; j < array.length; j++) {
+        for (int i = array.length-1; i > 0; i++) {
+            var temp = array[i];//Temporary value storage
+            for (int j = array.length-1; j > 0; j++) {
                 if (j + 1 != array.length) {
-                    array[j + 1] = array[j];//Shift all values up one now that we
+                    array[j + 1] = array[j];//Shift all values up one now that we have the last one stored
                 }
             }
-            array[size - 1] = temp;
+            array[0] = temp;
         }
-        System.out.print("Array\n");
+        String arrayString = "[";
+        for (int i = 0; i < size; i++) {
+            arrayString += "\"";
+            arrayString += array[i];
+            arrayString += "\"";
+            if (i != size - 1) {
+                arrayString += ", ";   
+            }
+        }
+        arrayString += "]";
+        System.out.println("The array: " + array);
+
     }    
 }
