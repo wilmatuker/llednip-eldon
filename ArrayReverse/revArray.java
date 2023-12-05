@@ -16,18 +16,11 @@ class revArray {
            array[i] = amput.nextLine();
         }
 
-        for (int i = array.length-1; i > 0; i--) 
+        for(int i = 0, j = array.length - 1; i < array.length/2; i++, j--) 
         {            
-            var temp = array[i];//Temporary value storage
-            for (int j = 0; j > array.length-1; j++) {
-                System.out.println("Hi!");
-                System.out.println("array:");
-                for (int j2 = 0; j2 < array.length; j2++) {
-                    System.out.println(array[j2]);
-                }
-
-                array[j] = array[j-1];    
-            }
+            String temp = array[j];
+            array[j] = array[i];
+            array[i] = temp;
         }
 
         String arrayString = "[";
@@ -45,3 +38,7 @@ class revArray {
 
     }    
 }
+
+// Grab temp from end
+// end gets beggining
+//begging gets temp
