@@ -29,12 +29,12 @@ class chessPattern {
         board[0][4] = '♚';
         
         //checker pattern
-        for (int r = 2; r < 5; r++) {
-            for (int c = 0; c < 8; c ++) {
+        for (int r = 3; r < 5; r++) {
+            for (int c = 0; c < 6; c ++) {
                 if(c % 2 == 0) {
-                    System.out.print('□');
+                    board[r][c] = '□';
                 } else {
-                    System.out.print('■');
+                    board[r][c] = '■';
                 }
             }
         }
@@ -43,7 +43,7 @@ class chessPattern {
             for (int c = 0; c < 8; c++) {
                 System.out.print(board[r][c]);
             }
-            System.out.println("");
+            System.out.println("\n");
         }
     }
 }
