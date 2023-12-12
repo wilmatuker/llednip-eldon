@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class problem2 {
-    public static void main(String[] args) {
+    public static void main(String args[]) {
         Scanner impuuuut = new Scanner(System.in);
 
         System.out.println("How many numbers do you want to find the average of?");
