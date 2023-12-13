@@ -5,6 +5,7 @@ public class problem8 {
         Scanner impuuuuuut = new Scanner(System.in);
         System.out.println("How many things do you want in the array?");
         int size = impuuuuuut.nextInt();
+        impuuuuuut.nextLine();//stop consuming nextline, from https://www.geeksforgeeks.org/why-is-scanner-skipping-nextline-after-use-of-other-next-functions/
         String[] things = new String[size];
         
         for (int i = 0; i < size; i++) {
