@@ -15,7 +15,7 @@ class randNum {
             if(guess > answer){
                 System.out.println("Too high. Guess again.\n    >> ");
             }
-            elif(guess < answer){
+            else if(guess < answer){
                 System.out.println("Too low. Guess again.\n    >> ");
             }
             guess = inpuut.nextInt();
