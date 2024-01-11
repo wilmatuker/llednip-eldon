@@ -26,7 +26,7 @@ class digiSum{
         }
 
         for (int c = 0; c < digitString.length(); c++) {
-            sum += digitString.charAt(c) - 48;
+            sum += digitString.charAt(c) - 48;//how i found this out: https://stackoverflow.com/questions/5029840/convert-char-to-int-in-c-and-c
         }
 
         System.out.println("The digits added together make " + sum);
